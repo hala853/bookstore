@@ -77,15 +77,17 @@ function apiDelete(base, params = {}) {
 })();
 
 async function loadBooks() {
-    const data = await apiGet(API.books, { action: 'all' });
-    if (data.error) { ntf('خطأ في تحميل الكتب'); return; }
-    ALL_BOOKS = data;
+    ALL_BOOKS = [
+        { id: 1, title: "رواية كلاسيكية", cat: "روايات كلاسيكية", price: 20, read: 15, sold: 5, views: 100, cover: "" },
+        { id: 2, title: "جريمة وغموض", cat: "جريمة وغموض", price: 15, read: 30, sold: 12, views: 250, cover: "" },
+        { id: 3, title: "فلسفة وفكر", cat: "فلسفة وفكر", price: 25, read: 10, sold: 3, views: 80, cover: "" },
+        { id: 4, title: "رعب وعلمي", cat: "رعب وعلمي", price: 18, read: 45, sold: 20, views: 310, cover: "" }
+    ];
     renderShelves();
     renderCards(getF(FKEY));
     updateSideCounts();
     updateStatBar();
 }
-
 /* ═══════════════════════════════════════════════════════
    PAGE SYSTEM
 ═══════════════════════════════════════════════════════ */
