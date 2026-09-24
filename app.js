@@ -78,10 +78,18 @@ function apiDelete(base, params = {}) {
 
 async function loadBooks() {
     ALL_BOOKS = [
-        { id: 1, title: "رواية كلاسيكية", cat: "روايات كلاسيكية", price: 20, read: 15, sold: 5, views: 100, cover: "" },
-        { id: 2, title: "جريمة وغموض", cat: "جريمة وغموض", price: 15, read: 30, sold: 12, views: 250, cover: "" },
-        { id: 3, title: "فلسفة وفكر", cat: "فلسفة وفكر", price: 25, read: 10, sold: 3, views: 80, cover: "" },
-        { id: 4, title: "رعب وعلمي", cat: "رعب وعلمي", price: 18, read: 45, sold: 20, views: 310, cover: "" }
+        { id: 1, title: "عشرة أفراد صغار", cat: "جريمة وغموض", price: 60000, read: 1, sold: 1, views: 1, vip: 0, cover: "" },
+        { id: 2, title: "النفوس الميتة", cat: "روايات كلاسيكية", price: 72000, read: 1, sold: 0, views: 1, vip: 1, cover: "" },
+        { id: 3, title: "المعطف", cat: "روايات كلاسيكية", price: 15000, read: 1, sold: 1, views: 1, vip: 0, cover: "" },
+        { id: 4, title: "الأخوة كارامازوف", cat: "روايات كلاسيكية", price: 95000, read: 1, sold: 0, views: 1, vip: 1, cover: "" },
+        { id: 5, title: "موت في النيل", cat: "جريمة وغموض", price: 62000, read: 1, sold: 0, views: 1, vip: 0, cover: "" },
+        { id: 6, title: "قتل على قطار الشرق", cat: "جريمة وغموض", price: 65000, read: 1, sold: 0, views: 1, vip: 1, cover: "" },
+        { id: 7, title: "مزرعة الحيوانات", cat: "روايات كلاسيكية", price: 55000, read: 1, sold: 0, views: 1, vip: 0, cover: "" },
+        { id: 8, title: "1984", cat: "روايات كلاسيكية", price: 70000, read: 1, sold: 0, views: 1, vip: 1, cover: "" },
+        { id: 9, title: "لعبة الملاك", cat: "رعب وعلمي", price: 85000, read: 1, sold: 0, views: 1, vip: 0, cover: "" },
+        { id: 10, title: "ظل الريح", cat: "رعب وعلمي", price: 90000, read: 1, sold: 0, views: 1, vip: 1, cover: "" },
+        { id: 11, title: "الجريمة والعقاب", cat: "روايات كلاسيكية", price: 98000, read: 1, sold: 0, views: 1, vip: 1, cover: "" },
+        { id: 12, title: "الأبله", cat: "روايات كلاسيكية", price: 92000, read: 1, sold: 0, views: 1, vip: 0, cover: "" }
     ];
     renderShelves();
     renderCards(getF(FKEY));
